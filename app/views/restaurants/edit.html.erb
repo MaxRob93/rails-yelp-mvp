@@ -1,0 +1,8 @@
+<%= simple_form_for [@restaurant] do |r| %>
+  <%= r.input :name %>
+  <%= r.input :address %>
+  <%= r.input :category %>
+  <%= r.submit "Edit this restaurant", class: "btn btn-primary" %>
+<% end %>
+<br>
+<%= link_to "See all restaurants", restaurants_path, class: "btn btn-primary" %>
